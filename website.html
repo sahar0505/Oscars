@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mon Site avec Wrappers et Textes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Utilisez la police Montserrat pour les titres */
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700; /* Poids de police pour le titre */
+    }
+  </style>
+</head>
+<body>
+
+<div id="wrapper0" class="wrapper">
+        <!-- Section 1 avec une image -->
+    <div class="wrapper-text">
+        <h2>THE OSCARS</h2>
+        <p>Mon projet explore l'évolution des nominations et des victoires aux Oscars depuis leur création jusqu'à 2022. En mettant en lumière les divers genres de films nominés et les brillants réalisateurs derrière ces œuvres, j'offre un aperçu des succès cinématographiques à travers les décennies. </p>
+    </div>
+    <img src="banner.jpg" alt="Image "/>
+ </div>
+
+<div id="wrapper1" class="wrapper">
+    <!-- Section 1 avec une image -->
+    <div class="wrapper-text">
+        <h2>Word Cloud</h2>
+        <p>Utilisant Python pour generer un nuage de mots ("word cloud" en anglais) à partir des noms des réalisateurs de films nominés aux Oscars. Le nuage de mots est une représentation visuelle où la taille des mots est proportionnelle à leur fréquence d'apparition dans le texte source.
+            En utilisant les noms des réalisateurs de films, le code crée une image où les noms des réalisateurs les plus fréquents apparaissent en plus gros, formant ainsi une représentation graphique mettant en évidence les réalisateurs les plus prolifiques ou les plus souvent associés à des films nominés aux Oscars. Cela permet une visualisation rapide des réalisateurs les plus influents ou les plus présents dans le contexte des nominations aux Oscars.</p>
+    </div>
+    <img src="Figure_1.png" alt="Image 1"/>
+</div>
+
+<div id="wrapper2" class="wrapper">
+    <!-- Section 2 avec un plot interactif 1 -->
+    <div class="wrapper-text">
+        <h2>Bar representation</h2>
+        <p>utilisant la bibliothèque Plotly Express pour créer ce graphique interactif de type barre. j'ai pris en compte les données des genres de films nominés et gagnants aux Oscars pour la catégorie "Meilleur Film". Le graphique interactif permet aux utilisateurs de survoler les barres pour voir les chiffres exacts, ainsi que de sélectionner ou désélectionner les catégories dans la légende pour une visualisation plus précise des données.</p>
+    </div>
+    <iframe src="interactive_chart.html" width="100%" height="400px" frameborder="0"></iframe>
+</div>
+
+<div id="wrapper3" class="wrapper">
+    <!-- Section 3 avec un plot interactif 2 -->
+    <div class="wrapper-text">
+        <h2>Sunburst representation</h2>
+        <p>
+            utilisant toujours la meme bibliothèque Plotly Express pour generer ce graphique interactif de type sunburst. Le sunburst est une représentation visuelle hiérarchique qui affiche les données sous forme de secteurs concentriques. Le graphique interactif Sunburst généré ici montre la répartition des réalisateurs de films en fonction des genres sur différents niveaux hiérarchiques. Chaque secteur représente un réalisateur, et à l'intérieur de chaque secteur, les genres de films avec lesquels ce réalisateur est associé sont affichés.</p>
+    </div>
+    <iframe src="directors_genres_tree.html" width="100%" height="400px" frameborder="0"></iframe>
+</div>
+
+<div id="wrapper4" class="wrapper">
+    <!-- Section 4 avec un lien pour télécharger un fichier CSV -->
+    <div class="wrapper-text">
+        <h2>Download</h2>
+        <p>Pour ce projet, j'ai utilisé un dataset provenant de Kaggle contenant les gagnants et les nommés aux Oscars pour la catégorie du Meilleur Film, accompagné d'évaluations d'IMDB et de Rotten Tomatoes, ainsi que d'autres détails comme la durée des films et les informations sur les réalisateurs. Deux fichiers sont disponibles en téléchargement : le fichier CSV des Oscars et le fichier Python contenant les scripts pour les plots interactifs Ce fichier Python offre la possibilité de modifier les scripts pour créer différents types de visualisations ou explorer d'autres aspects des données selon les besoins individuels ou les intérêts spécifiques</p>
+    </div>
+    <footer class="wrapper style1 align-center">
+        <div class="inner">
+            <a href="oscars_df.csv" download="oscars_df.csv">
+                Data Set in CSV format
+            </a>
+            <br>
+            <!-- Download link for Python file -->
+            <a href="web.py" download="web.py">
+                 Python Script
+            </a>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>
